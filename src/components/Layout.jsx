@@ -11,13 +11,13 @@ const Layout = ({ children }) => {
           shadow-[#6b6b6b] border border-gray-500 border-opacity-20 flex justify-center items-center overflow-hidden
            relative"
         >
-          <div className="h-full w-[40%] "></div>
-          <div className="min-h-full w-[60%] ">{children}</div>
+          <div className="h-full w-[50%] "></div>
+          <div className="h-full w-[50%] bg-red-300 ">{children}</div>
         </div>
 
-        <div className="absolute top-0 left-0 w-full h-full flex justify-end bg-[#000] bg-opacity-30">
+        {/* <div className="absolute top-0 left-0 w-full h-full flex justify-end bg-[#000] bg-opacity-30">
           <div className="h-full w-[30%] bg-[#ebf6f7] backdrop-blur-[7px] bg-opacity-5"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
