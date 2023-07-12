@@ -11,7 +11,7 @@ function twistedBackground() {
     layerSize = radius * 0.3,
     layerOverlap = Math.round(quality * 0.1);
   canvas.setAttribute("id", "canvas-twisted");
-  jQuery("#canvas-twisted").css("opacity", 0.07);
+  jQuery("#canvas-twisted").css("opacity", 0.5);
   jQuery("#canvas-twisted").css("transform", "translateX(" + "10%" + ")");
   jQuery("body").append(
     '<div class="bg-color" style="background-color:' + "#212121" + '"></div>'
@@ -85,11 +85,11 @@ function twistedBackground() {
     context.translate(layer.x, layer.y);
     context.rotate(layer.r);
     if (!mask) {
-      context.strokeStyle = "#FFFFFF";
+      context.strokeStyle = "#c90076";
       context.lineWidth = 1;
       context.strokeRect(-size2, -size2, size, size);
     }
-    context.fillStyle = "#212121";
+    context.fillStyle = "#0c0c0c";
     context.fillRect(-size2, -size2, size, size);
   }
   (function () {
