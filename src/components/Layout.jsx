@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 import Cursor from "./Cursor";
+import Sidebar from "./Sidebar";
+import Burger from "./Burger";
 
 const Layout = ({ children }) => {
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(true);
 
   return (
     <div>
@@ -19,6 +21,10 @@ const Layout = ({ children }) => {
             <div className="w-[70%]">{children}</div>
           </div>
         </div>
+
+        <Burger showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+
+        <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       </div>
     </div>
   );
