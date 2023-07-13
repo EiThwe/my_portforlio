@@ -10,7 +10,7 @@ const Cursor = () => {
       outerScale={2}
       outerAlpha={0}
       hasBlendMode={true}
-      trailingSpeed={3}
+      trailingSpeed={10}
       innerStyle={{
         backgroundColor: "#c90076",
       }}

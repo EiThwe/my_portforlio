@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="absolute top-0 left-0 w-full h-full flex justify-end bg-[#000] bg-opacity-30">
-          <div className="h-full w-[30%] bg-[#ebf6f7] backdrop-blur-[7px] bg-opacity-5"></div>
+          {/* <div className="h-full w-[30%] bg-[#ebf6f7] backdrop-blur-[7px] bg-opacity-5"></div> */}
         </div>
       </div>
     </div>

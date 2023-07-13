@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500&display=swap");
+@import "animate.css";
+
+:root {
+  --anidelay: 5;
+}
 
 body {
   /* width: 100%; */
@@ -20,6 +25,82 @@ body {
   color: #c90076;
 }
 
+.loading-box {
+  width: 300px;
+  position: relative;
+  animation: fadeOut 0.5s 1.1s forwards;
+}
+
+.loading-text-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-text {
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  letter-spacing: 2px;
+  animation: fadeDown 0.8s 1s forwards;
+}
+
+.loading-underline {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  animation: widthChange 0.8s 0.2s forwards;
+}
+
+@keyframes widthChange {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 87%;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* .animate__animated.animate__fadeInUp{
+  --animate-duration: 7s;
+} */
+
+/* .line-box .line{
+  animation: fullWidth;
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  color:white;
+}   */
+/* @keyframes fullWidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
