@@ -12,23 +12,24 @@ const App = () => {
       setTimeout(() => {
         setIsLoading(false);
       }, 2000),
-    [])
-    if (isLoading) {
-      return (
-        <div className="w-full h-screen flex justify-center items-center bg-black ">
-          <div className="loading-box">
-            <div className="loading-text-box">
-              <h3 className="loading-text">Raphtalia Kay</h3>
-            </div>
-            <span className="loading-underline"> </span>
+    []
+  );
+  if (isLoading) {
+    return (
+      <div className="w-full h-screen flex justify-center items-center bg-black ">
+        <div className="loading-box">
+          <div className="loading-text-box">
+            <h3 className="loading-text">Raphtalia Kay</h3>
           </div>
+          <span className="loading-underline"> </span>
         </div>
-      );
-    }
+      </div>
+    );
+  }
   return (
     <Layout>
-      <Skills/>
-      <Education/>
+      <Skills />
+      <Education />
       {/* {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
         <p key={i} className="text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas,
@@ -39,8 +40,6 @@ const App = () => {
       ))} */}
     </Layout>
   );
- 
-  
 };
 
 export default App;

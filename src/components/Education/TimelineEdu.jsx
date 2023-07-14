@@ -19,7 +19,7 @@ const TimelineEdu = () => {
               Electronics and Communication Engineering
             </span>{" "}
             <br />{" "}
-            <span className="text-sm font-light text-gray-300 ">
+            <span className="text-sm font-light text-gray-400 ">
               Myanmar Insitute of Information Technology(MIIT)
             </span>{" "}
             <br />
@@ -35,7 +35,7 @@ const TimelineEdu = () => {
           <span className="text-[#c90076] p-0 m-0 ">
               Web development
             </span><br />
-            <span className="text-sm font-light text-gray-300 ">
+            <span className="text-sm font-light text-gray-400 ">
               MMS IT
             </span><br />
             <span className="text-xs text-gray-500">Since 2022 (early)</span>
@@ -50,7 +50,7 @@ const TimelineEdu = () => {
           <span className="text-[#c90076] p-0 m-0 ">
              UI/UX
             </span><br />
-            <span className="text-sm font-light text-gray-300 ">
+            <span className="text-sm font-light text-gray-400 ">
              Simbolo
             </span><br />
             <span className="text-xs text-gray-500">Since 2023(early)</span>
