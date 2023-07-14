@@ -13,27 +13,27 @@ export const sidebarData = [
   {
     Icon: TfiLocationPin,
     name: "Home",
-    delay: "delay-[400ms]",
+    delay: "delay-[500ms]",
   },
   {
     Icon: MdOutlinePersonOutline,
     name: "Contact",
-    delay: "delay-[500ms]",
+    delay: "delay-[600ms]",
   },
   {
     Icon: CgMenuLeft,
     name: "Resume",
-    delay: "delay-[600ms]",
+    delay: "delay-[700ms]",
   },
   {
     Icon: BsUiChecksGrid,
     name: "Portfolio",
-    delay: "delay-[700ms]",
+    delay: "delay-[800ms]",
   },
   {
     Icon: TbMessages,
     name: "Contact",
-    delay: "delay-[800ms]",
+    delay: "delay-[900ms]",
   },
 ];
 
