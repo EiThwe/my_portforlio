@@ -14,15 +14,23 @@ const OtherKnowledge = () => {
         </h3>
         <hr className="w-8 mb-10" />
         <div className="grid grid-cols-3 gap-10">
-          {otherKnowledgeData.map(({ Icon }, i) => (
-            <Icon size={50} strokeWidth={1.2} key={i} />
+          {otherKnowledgeData.map(({ Icon, title }, i) => (
+            <div className="flex flex-col justify-center items-center" key={i}>
+              <Icon size={50} strokeWidth={1.2} />
+              <p className="text-sm text-[#7c7c7c]">{title}</p>
+            </div>
           ))}
-          <img
-            height="80"
-            width="80"
-            className="-translate-y-[10px]"
-            src="https://cdn.simpleicons.org/daisyui/white"
-          />
+          <div className="flex flex-col justify-center items-center tracking-tight">
+            <img
+              height="80"
+              width="80"
+              className="-translate-y-[10px]"
+              src="https://cdn.simpleicons.org/daisyui/white"
+            />
+            <p className="-translate-y-4 text-sm text-[#7c7c7c] tracking-tight">
+              Daisy Ui
+            </p>
+          </div>
         </div>
       </div>
     </section>

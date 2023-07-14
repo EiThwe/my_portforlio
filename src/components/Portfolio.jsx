@@ -13,13 +13,13 @@ const Portfolio = () => {
           Selected Work
         </h3>
         <hr className="w-8 mb-5" />
-        <p className="mb-10 text-[#7c7c7c] tracking-tight">
-          This is a collection of my recent projects. Preview link and the tools
+        <p className="mb-10 text-[#7c7c7c] tracking-tighter">
+          This is a collection of my recent projects.Project Title, preview link and the tools
           that have been used can be seen on hover.
         </p>
         <div className="w-full flex flex-col gap-10">
-          {projectCardData.map(({ image }, i) => (
-            <ProjectCard image={image} />
+          {projectCardData.map((data, i) => (
+            <ProjectCard {...data} key={i} />
           ))}
         </div>
       </div>

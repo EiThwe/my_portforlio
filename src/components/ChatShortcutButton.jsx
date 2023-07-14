@@ -7,7 +7,7 @@ const ChatShortcutButton = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="w-[250px] h-[250px] fixed -bottom-[70px] -right-[70px]">
+    <div className="w-[300px] h-[300px] fixed -bottom-[70px] -right-[70px]">
       <div className="w-full h-full relative flex justify-center items-center">
         {show ? (
           <button
