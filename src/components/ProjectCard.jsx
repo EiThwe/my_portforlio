@@ -10,6 +10,7 @@ const ProjectCard = ({ image, title, link, tools }) => {
 
   useEffect(() => {
     setHeight(`translate-y-[${ref.current.clientHeight}px]`);
+    console.log(height);
   }, []);
   return (
     <>
@@ -27,11 +28,11 @@ const ProjectCard = ({ image, title, link, tools }) => {
         />
         <div className="w-full h-full absolute bg-black bg-opacity-50"></div>
         <div
-          className={`hidden-container absolute bottom-0 w-full min-h-[100px] px-2 ${
-            hover ? "translate-y-0" : `${height}`
+          className={`hidden-container absolute bottom-0 w-full px-2 ${
+            hover ? "translate-y-0" : height
           } transition-all ease-linear duration-300`}
         >
-          <div className="w-full min-h-[50px]">
+          <div className="w-full">
             <h3 className="text-[20px] mb-2 tracking-tight">{title}</h3>
             <hr className={`${hover ? "w-16" : "w-8"} mb-3 `} />
           </div>
