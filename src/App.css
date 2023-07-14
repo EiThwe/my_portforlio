@@ -37,7 +37,7 @@ body {
 }
 
 .loading-text {
-  color: white;
+  color: #c90076;
   text-align: left;
   font-size: 30px;
   letter-spacing: 2px;
@@ -51,7 +51,7 @@ body {
   bottom: -15px;
   width: 0%;
   height: 2px;
-  background-color: white;
+  background-color: #c90076;
   animation: widthChange 0.8s 0.2s forwards;
 }
 
@@ -101,6 +101,10 @@ body {
     width: 50%;
   }
 } */
+::-webkit-scrollbar {
+  display: none;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
