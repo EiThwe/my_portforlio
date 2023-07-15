@@ -7,7 +7,7 @@ const ChatShortcutButton = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="w-[250px] h-[250px] fixed -bottom-[70px] -right-[70px]">
+    <div className="w-[250px] h-[250px] fixed -bottom-[88px] -right-[88px]">
       <div className="w-full h-full relative flex justify-center items-center">
         {show ? (
           <button
@@ -23,26 +23,26 @@ const ChatShortcutButton = () => {
           >
             <HiOutlineChatBubbleOvalLeftEllipsis
               size={30}
-              className="text-white"
+              className="text-primary"
             />
           </button>
         )}
 
         <div
-          className={`absolute w-full h-full  bg-primary bg-opacity-20 backdrop-blur-[3px]  rounded-full z-[1] ${
+          className={`absolute w-full h-full border-[1px] border-white border-opacity-10 shadow-inner shadow-[#6b6b6b] bg-primary bg-opacity-20 backdrop-blur-[13px]  rounded-full z-[1] ${
             show ? "scale-100" : "scale-0"
           } transition-all duration-300 ease-in-out`}
         >
           <Link
             to={"https://t.me/eT2919"}
             target="_blank"
-            className="chat-telegram absolute top-[120px] left-[10px] w-11 h-11 z-10 rounded-full bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            className="chat-telegram absolute top-[115px] left-[10px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
           >
             <BrandTelegram size={25} strokeWidth={1.2} className="text-white" />
           </Link>
           <Link
             to={"https://m.me/100008563840418"}
-            className="chat-messenger absolute top-[40px] left-[40px] w-11 h-11 z-10 rounded-full bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            className="chat-messenger absolute top-[40px] left-[40px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
           >
             <BrandMessenger
               size={25}
@@ -53,7 +53,7 @@ const ChatShortcutButton = () => {
           <Link
             to={""}
             onClick={() => setShow(!show)}
-            className="own-chat absolute top-[10px] left-[120px] w-11 h-11 z-10 rounded-full bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            className="own-chat absolute top-[10px] left-[115px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
           >
             <HiOutlineChatBubbleOvalLeftEllipsis
               size={25}

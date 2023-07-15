@@ -16,7 +16,7 @@ const OtherKnowledge = () => {
         <div className="grid grid-cols-3 gap-10">
           {otherKnowledgeData.map(({ Icon, title }, i) => (
             <div className="flex flex-col justify-center items-center" key={i}>
-              <Icon size={50} strokeWidth={1.2} />
+              <Icon size={50}  className="" strokeWidth={0.8} />
               <p className="text-sm text-[#7c7c7c]">{title}</p>
             </div>
           ))}
