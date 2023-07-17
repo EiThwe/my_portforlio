@@ -38,7 +38,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
 
             <div className="flex flex-col justify-start gap-[18px] mt-[20px]">
               {sidebarData.map(({ Icon, name, delay }, index) => (
-                <SidebarItemContainer index={index}>
+                <SidebarItemContainer key={index} index={index}>
                   <button
                     key={index}
                     className={`flex items-center gap-[10px] group ${itemShowAndHide(

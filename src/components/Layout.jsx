@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import Burger from "./Burger";
 
 const Layout = ({ children }) => {
-  const [showSidebar, setShowSidebar] = useState(true);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   return (
     <div>
