@@ -4,7 +4,7 @@ import { projectCardData } from "../utils/projectCardData";
 
 const Portfolio = () => {
   return (
-    <section className="w-full min-h-full flex justify-center items-center">
+    <section className="portfolio w-full min-h-full flex justify-center items-center">
       <div className="w-full h-full text-white ">
         <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
           Portfolio

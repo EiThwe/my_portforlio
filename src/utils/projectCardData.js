@@ -9,52 +9,51 @@ import {
 } from "tabler-icons-react";
 
 export const projectCardData = [
-  
   {
-    image: "https://i.postimg.cc/9FjRc5F3/Screenshot-2023-07-13-192052.png",
+    image: "https://i.postimg.cc/k5sw-BzZn/Screenshot-2023-07-15-232411.png",
     link: "https://the-cappa-luxury-hotel-green.vercel.app/",
     title: "The Cappa Luxury Hotel",
     tools: [
       {
         Icon: BrandReact,
-        title:"React"
+        title: "React",
       },
 
       {
         Icon: BrandTailwind,
-        title:"Tailwind"
+        title: "Tailwind",
       },
       {
         Icon: BrandFramer,
-        title:"Framer Motion"
+        title: "Framer Motion",
       },
 
       {
         Icon: BrandNpm,
-        title:"Npm Libraries"
+        title: "Npm Libraries",
       },
     ],
   },
   {
-    image: "https://i.postimg.cc/fTK4kmZz/Screenshot-2023-07-13-191424.png",
+    image: "https://i.postimg.cc/MHLTNkw0/Screenshot-2023-07-17-222459.png",
     link: "https://nexus-contacts.vercel.app/",
     title: "Nexus Contact App",
     tools: [
       {
         Icon: BrandReact,
-        title:"React"
+        title: "React",
       },
       {
         Icon: BrandRedux,
-        title:"Redux"
+        title: "Redux",
       },
       {
         Icon: BrandTailwind,
-        title:"Tailwind"
+        title: "Tailwind",
       },
       {
         Icon: BrandNpm,
-        title:"Npm Libraries"
+        title: "Npm Libraries",
       },
     ],
   },
