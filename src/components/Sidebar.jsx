@@ -4,7 +4,9 @@ import { sidebarData, socialData } from "../utils/data";
 import { Link } from "react-router-dom";
 import SidebarItemContainer from "./SidebarItemContainer";
 
-const Sidebar = ({ showSidebar, setShowSidebar }) => {
+const Sidebar = ({ showSidebar, setShowSidebar, activeTab }) => {
+  console.log(activeTab);
+
   const itemShowAndHide = (delay) => {
     return `${!showSidebar && "translate-y-[20px] delay-0"} ${
       showSidebar ? `trasnlate-y-0 ${delay}` : "translate-y-[20px]"
@@ -39,7 +41,9 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
             <div className="flex flex-col justify-start gap-[18px] mt-[20px]">
               {sidebarData.map(({ Icon, name, delay }, index) => (
                 <SidebarItemContainer key={index} index={index}>
-                  <button
+                  <a
+                    onClick={() => setShowSidebar(false)}
+                    href={`#${name.toLowerCase()}`}
                     key={index}
                     className={`flex items-center gap-[10px] group ${itemShowAndHide(
                       delay
@@ -47,12 +51,23 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
                   >
                     <Icon
                       size={18}
-                      className="text-secondary group-hover:text-primary transition-all duration-500 ease-in-out"
+                      className={` group-hover:text-primary transition-all duration-500 ease-in-out ${
+                        activeTab.toLowerCase() == name.toLowerCase()
+                          ? "text-primary"
+                          : "text-secondary"
+                      }`}
                     />
-                    <h3 className="text-[15px] text-secondary group-hover:text-primary transition-all duration-500 ease-in-out ">
+                    <h3
+                      className={`text-[15px] text-secondary group-hover:text-primary transition-all duration-500 
+                    ease-in-out ${
+                      activeTab.toLowerCase() == name.toLowerCase()
+                        ? "text-primary"
+                        : "text-secondary"
+                    }`}
+                    >
                       {name}
                     </h3>
-                  </button>
+                  </a>
                 </SidebarItemContainer>
               ))}
             </div>

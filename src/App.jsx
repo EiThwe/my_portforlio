@@ -6,11 +6,13 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 
 const App = () => {
+  const [activeTab, setActiveTab] = useState("Hero");
+
   return (
-    <Layout>
-      <Contact />
-      <Hero />
-      <About />
+    <Layout activeTab={activeTab}>
+      <Hero setActiveTab={setActiveTab} />
+      <About setActiveTab={setActiveTab} />
+      <Contact setActiveTab={setActiveTab} />
     </Layout>
   );
 };

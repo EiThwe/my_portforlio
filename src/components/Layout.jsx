@@ -4,8 +4,8 @@ import Cursor from "./Cursor";
 import Sidebar from "./Sidebar";
 import Burger from "./Burger";
 
-const Layout = ({ children }) => {
-  const [showSidebar, setShowSidebar] = useState(false);
+const Layout = ({ children, activeTab }) => {
+  const [showSidebar, setShowSidebar] = useState(true);
 
   return (
     <div>
@@ -24,7 +24,11 @@ const Layout = ({ children }) => {
 
         <Burger showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
 
-        <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+        <Sidebar
+          activeTab={activeTab}
+          showSidebar={showSidebar}
+          setShowSidebar={setShowSidebar}
+        />
       </div>
     </div>
   );

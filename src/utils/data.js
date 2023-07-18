@@ -16,11 +16,6 @@ export const sidebarData = [
     delay: "delay-[500ms]",
   },
   {
-    Icon: MdOutlinePersonOutline,
-    name: "Contact",
-    delay: "delay-[600ms]",
-  },
-  {
     Icon: CgMenuLeft,
     name: "Resume",
     delay: "delay-[700ms]",
