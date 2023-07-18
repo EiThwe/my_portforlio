@@ -1,0 +1,18 @@
+.shape{
+    border : 2px solid #c90076;
+    animation : one 5s linear infinite;
+    border-radius: 28% 72% 42% 58%/38% 37% 63% 66%;
+    /* border-radius: 48% 48% 48% 48%/38% 38% 38% 38%; */
+    animation-duration: 18s;
+    max-width: 530px;
+    max-height: 530px;
+    overflow: hidden;
+}
+/* @keyframes one {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  } */
