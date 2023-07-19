@@ -1,10 +1,13 @@
 import React from "react";
 import Skillbar from "./Skillbar";
 
+
 const Skills = () => {
+
   return (
     <>
-      <div className=" my-20">
+      {/* (visible ? "animate" : "") */}
+      <div className=" py-3 sm:py-20">
         {/*  text  */}
         <div className="text py-5">
           <p className="pb-5 ">

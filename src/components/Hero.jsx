@@ -11,7 +11,7 @@ const Hero = ({ setActiveTab }) => {
         className="w-full md:min-h-full  flex md:py-10 py-20  items-start justify-center flex-col"
       >
         <div className="w-full  text-white ">
-          <div className="h-[280px]">
+          <div className="h-[280px] sm:h-[170px] lg:h-[250px] xl:h-[200px]">
             <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
               INTRODUCTION
             </h6>

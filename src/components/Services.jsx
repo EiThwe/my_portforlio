@@ -4,7 +4,7 @@ import { ChevronDown, EaseInControlPoint } from "tabler-icons-react";
 
 const Services = () => {
   return (
-    <section className="services w-full min-h-full flex justify-center items-center">
+    <section className="services py-10 sm:py-20 w-full min-h-full flex justify-center items-center">
       <div className="w-full h-full text-white ">
         <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
           Services
@@ -31,36 +31,44 @@ const Services = () => {
             }}
           >
             <Accordion.Item value="customization">
-              <Accordion.Control>Customization</Accordion.Control>
-              <Accordion.Panel>
-                As a junior React developer, I am skilled in customizing web
+              <Accordion.Control> <h3 className=" text-xl sm:text-2xl">Customization</h3> </Accordion.Control>
+              <Accordion.Panel >
+                <p className="text-[#7c7c7c] text-sm  sm:text-lg sm:font-normal">As a junior React developer, I am skilled in customizing web
                 designs by creating components, styling with CSS, and
-                implementing interactivity using frontend development tools.
+                implementing interactivity using frontend development tools.</p>
+                
               </Accordion.Panel>
             </Accordion.Item>
 
             <Accordion.Item value="responsive-designs">
-              <Accordion.Control>Responsive Designs</Accordion.Control>
+              <Accordion.Control><h3 className=" text-xl sm:text-2xl">Responsive Designs</h3></Accordion.Control>
               <Accordion.Panel>
-                I'm proficient in creating responsive web designs that adapt
+              <p className="text-[#7c7c7c] text-sm  sm:text-lg sm:font-normal">
+              I'm proficient in creating responsive web designs that adapt
                 well to different devices, showcasing my frontend development
                 skills.
+              </p>
+               
               </Accordion.Panel>
             </Accordion.Item>
 
             <Accordion.Item value="enhanced-usability">
-              <Accordion.Control>Enhanced Usability</Accordion.Control>
+              <Accordion.Control><h3 className=" text-xl sm:text-2xl">Enhanced Usability</h3></Accordion.Control>
               <Accordion.Panel>
-                My backend knowledge adds practical and functional designs to
+              <p className="text-[#7c7c7c] text-sm  sm:text-lg sm:font-normal">
+              My backend knowledge adds practical and functional designs to
                 projects, improving real-world usability in development.
+              </p>
+                
               </Accordion.Panel>
             </Accordion.Item>
             <Accordion.Item value="maintenance">
-              <Accordion.Control>Maintenance</Accordion.Control>
+              <Accordion.Control><h3 className=" text-xl sm:text-2xl">Maintenance</h3></Accordion.Control>
               <Accordion.Panel>
-                I can provide continuous maintenance, ensuring smooth updates
+                <p className="text-[#7c7c7c] text-sm  sm:text-lg sm:font-normal">  I can provide continuous maintenance, ensuring smooth updates
                 and incorporating advanced features as the software progresses
-                from one version to another.
+                from one version to another.</p>
+              
               </Accordion.Panel>
             </Accordion.Item>
           </Accordion>

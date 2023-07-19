@@ -7,7 +7,7 @@ import SidebarItemContainer from "./SidebarItemContainer";
 const Sidebar = ({ showSidebar, setShowSidebar, activeTab }) => {
   const itemShowAndHide = (delay) => {
     return `${!showSidebar && "translate-y-[20px] delay-0"} ${
-      showSidebar ? `trasnlate-y-0 ${delay}` : "translate-y-[20px]"
+      showSidebar ? `translate-y-[2px] ${delay}` : "translate-y-[-22px]"
     }  transition-all duration-500 ease `;
   };
 

@@ -15,8 +15,11 @@
   width: 95%;
   border-radius: 6px;
   background: white;
-  animation: progress 0.4s ease-in-out forwards;
   opacity: 0;
+}
+.skill-box .skill-per.animate {
+  animation: progress 0.4s ease-in-out forwards;
+  animation-duration: 2s;
 }
 .skill-bar .html {
   width: 95%;

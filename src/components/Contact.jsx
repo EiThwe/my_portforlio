@@ -11,7 +11,7 @@ const Contact = ({ setActiveTab }) => {
     <Waypoint onEnter={() => setActiveTab("Contact")}>
       <section
         id="contact"
-        className="w-full min-h-full flex md:py-10 py-20  items-center"
+        className="w-full min-h-full flex md:py-10 pt-20 pb-14 sm:pb-20  items-center"
       >
         <div className="w-full  text-white ">
           <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">

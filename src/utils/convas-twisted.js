@@ -1,4 +1,4 @@
-function twistedBackground() {
+export const twistedBackground = () => {
   var canvas = document
       .querySelector("body")
       .appendChild(document.createElement("canvas")),
@@ -80,8 +80,8 @@ function twistedBackground() {
     }
   }
   function paintLayer(layer, mask) {
-    size = layerSize + (mask ? 10 : 0);
-    size2 = size / 2;
+    let size = layerSize + (mask ? 10 : 0);
+    let size2 = size / 2;
     context.translate(layer.x, layer.y);
     context.rotate(layer.r);
     if (!mask) {
@@ -118,6 +118,4 @@ function twistedBackground() {
       };
   })();
   initialize();
-}
-
-twistedBackground();
+};

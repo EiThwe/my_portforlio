@@ -4,7 +4,7 @@ import { otherKnowledgeData } from "../utils/otherKnowledgeData";
 
 const OtherKnowledge = () => {
   return (
-    <section className="w-full h-full flex  items-center">
+    <section className="w-full h-full py-10 sm:py-20 flex  items-center">
       <div className="w-full  text-white ">
         <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
           Other Knowledge
@@ -21,7 +21,7 @@ const OtherKnowledge = () => {
             >
               <Icon size={50} className="" strokeWidth={1.5} />
               <div className="">
-                <p className="text-sm text-white whitespace-nowrap">{title}</p>
+                <p className="text-xs sm:text-sm text-white whitespace-nowrap">{title}</p>
               </div>
             </div>
           ))}
@@ -32,7 +32,7 @@ const OtherKnowledge = () => {
               className="-translate-y-[0px]"
               src="https://cdn.simpleicons.org/daisyui/white"
             />
-            <p className="-translate-y-1 px-3 text-sm text-white tracking-tight ">
+            <p className="-translate-y-1 px-3 text-xs sm:text-sm text-white tracking-tight ">
               Daisy Ui
             </p>
           </div>
