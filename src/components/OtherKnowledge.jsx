@@ -9,7 +9,7 @@ const OtherKnowledge = () => {
         <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
           Other Knowledge
         </h6>
-        <h3 className="ml-2 text-[37px] tracking-tighter mb-5">
+        <h3 className="ml-2 sm:text-[37px] text-[26px] tracking-tighter mb-5">
           Software Development Tools
         </h3>
         <hr className="w-8 mb-10" />

@@ -9,11 +9,11 @@ const Services = () => {
         <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
           Services
         </h6>
-        <h3 className="ml-2 text-[37px] tracking-tighter mb-5">
-          What I can do.
+        <h3 className="ml-2 sm:text-[37px] text-[26px] tracking-tighter mb-5">
+          What I can do
         </h3>
         <hr className="w-8 mb-5" />
-        <p className="mb-10 text-[#7c7c7c] tracking-tighter">
+        <p className="mb-10 text-[#7c7c7c] tracking-tighter sm:text-base text-sm">
           I create custom web and web app designs for different types of
           businesses. My goal is to make attractive interfaces that meet client
           requirements and help their businesses thrive.

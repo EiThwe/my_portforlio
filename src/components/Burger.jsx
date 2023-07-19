@@ -4,7 +4,7 @@ const Burger = ({ showSidebar, setShowSidebar }) => {
   return (
     <button
       onClick={() => setShowSidebar((prev) => !prev)}
-      className="fixed z-[1000] sm:top-[45px] sm:right-[45px] top-[30px] right-[30px] group flex justify-center items-center flex-col gap-[4px]
+      className="fixed z-[1000] sm:top-[80px] sm:right-[80px] top-[30px] right-[30px] group flex justify-center items-center flex-col gap-[4px]
         px-1 py-2"
     >
       <div
@@ -15,10 +15,8 @@ const Burger = ({ showSidebar, setShowSidebar }) => {
         } transition-all duration-300 ease-in-out`}
       ></div>
       <div
-        className={`w-[18px]  bg-white group-hover:bg-primary ${
-          showSidebar
-            ? "rotate-[-45deg] translate-y-[-4px] h-[1px]"
-            : "rotate-0 h-[0.5px]"
+        className={`w-[18px]  bg-white h-[1px] group-hover:bg-primary ${
+          showSidebar ? "rotate-[-45deg] translate-y-[-4px] " : "rotate-0 "
         } transition-all duration-300 ease-in-out`}
       ></div>
     </button>

@@ -59,7 +59,7 @@ export const projectCardData = [
   },
 
   {
-    image: "https://i.postimg.cc/Y0gVpwSy/Cappa-Admin.png",
+    image: "https://i.postimg.cc/j5gdfb6z/Cappa-Admin.png",
     link: "https://the-cappa-admindashboard.vercel.app/login",
     title: "The Cappa - Admin Dashboard",
     tools: [

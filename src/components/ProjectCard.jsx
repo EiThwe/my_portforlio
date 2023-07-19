@@ -5,20 +5,19 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ image, title, link, tools }) => {
   const ref = useRef();
-
+  const [height, setHeight] = useState(0);
   const [loading, setLoading] = useState(true);
   const [hover, setHover] = useState(false);
 
-  // useEffect(() => {
-  //   setHeight(`translate-y-[${ref.current.clientHeight}px]`);
-  //   console.log(height);
-  // }, [height]);
+  useEffect(() => {
+    console.log(ref?.current?.clientHeight);
+  }, [ref]);
   return (
     <div>
       <div
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        className=" project-card w-full h-[250px] bg-black backdrop-blur-[3px] bg-opacity-5 rounded-xl shadow-inner	
+        className=" project-card w-full sm:h-[285px] h-[220px] bg-black backdrop-blur-[3px] bg-opacity-5 rounded-xl shadow-inner	
         shadow-[#6b6b6b] border border-gray-500 border-opacity-20 flex justify-center items-center overflow-hidden z-[100]"
       >
         {/* loading section */}
@@ -28,12 +27,12 @@ const ProjectCard = ({ image, title, link, tools }) => {
           </div>
         )}
         {/* img section */}
-        <div className="img-container">
+        <div className="img-container w-full h-full">
           <img
             onLoad={() => setLoading(false)}
             src={image}
             alt="project"
-            className="project-img w-full h-full rounded-xl"
+            className="project-img w-full h-full rounded-xl "
           />
         </div>
 
@@ -43,21 +42,24 @@ const ProjectCard = ({ image, title, link, tools }) => {
         {/* content */}
         <div
           className={`hidden-container bg-black backdrop-blur-[3px] bg-opacity-5  shadow-inner
-          shadow-[#474242] rounded-b-xl border-gray-500 border-opacity-20 absolute bottom-0 w-full px-2 py-5 transition-all ease-linear duration-300`}
+          shadow-[#474242] rounded-b-xl border-gray-500 border-opacity-20 absolute bottom-0 w-full px-2 py-5
+          h-[140px] transition-all ease-linear duration-300`}
           style={{
             transform: hover ? " translateY(0px)" : `translateY(55px)`,
             // ${ref.current?.clientHeight}
           }}
         >
           {/* text */}
-          <div className="w-full px-2">
-            <h3 className="text-[20px]   mb-2 tracking-tight">{title}</h3>
-            <hr className={`${hover ? "w-16" : "w-8"} mb-5 `} />
+          <div className="w-full px-2 ">
+            <h3 className="sm:text-[20px] text-base    tracking-tight ">
+              {title}
+            </h3>
+            <hr className={`${hover ? "w-16" : "w-8"} my-5 `} />
           </div>
 
           {/* tools */}
           <div
-            className={`flex justify-between  items-center mb-2 px-2 w-full`}
+            className={`flex justify-between  items-center mb-5 px-2 w-full`}
             ref={ref}
           >
             <div className=" flex flex-wrap w-[70%] gap-1 ">

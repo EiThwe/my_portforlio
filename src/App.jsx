@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import "./App.css";
 import Skills from "./components/Skill/Skills";
 import Education from "./components/Education/Education";
+import Profile from "./components/Profile";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("Home");
@@ -35,6 +36,7 @@ const App = () => {
   }
   return (
     <Layout activeTab={activeTab}>
+      <Profile />
       <Hero setActiveTab={setActiveTab} />
       <About setActiveTab={setActiveTab} />
       <OtherKnowledge />

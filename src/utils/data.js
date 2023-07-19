@@ -7,7 +7,8 @@ import {
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { CgMenuLeft } from "react-icons/cg";
 import { BsUiChecksGrid } from "react-icons/bs";
-import { TbMessages } from "react-icons/tb";
+import { BiChat } from "react-icons/bi";
+import { BrandFacebook, BrandTwitter, BrandGithub } from "tabler-icons-react";
 
 export const sidebarData = [
   {
@@ -26,14 +27,14 @@ export const sidebarData = [
     delay: "delay-[800ms]",
   },
   {
-    Icon: TbMessages,
+    Icon: BiChat,
     name: "Contact",
     delay: "delay-[900ms]",
   },
 ];
 
 export const socialData = [
-  { link: "https://www.instagram.com", Icon: TfiInstagram },
-  { link: "https://www.twitter.com", Icon: TfiTwitter },
-  { link: "https://www.facebook.com", Icon: TfiFacebook },
+  { link: "https://www.instagram.com", Icon: BrandGithub },
+  { link: "https://www.twitter.com", Icon: BrandTwitter },
+  { link: "https://www.facebook.com", Icon: BrandFacebook },
 ];
