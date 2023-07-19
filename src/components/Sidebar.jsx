@@ -6,8 +6,8 @@ import SidebarItemContainer from "./SidebarItemContainer";
 
 const Sidebar = ({ showSidebar, setShowSidebar, activeTab }) => {
   const itemShowAndHide = (delay) => {
-    return `${!showSidebar && "translate-y-[20px] delay-0"} ${
-      showSidebar ? `translate-y-[2px] ${delay}` : "translate-y-[-22px]"
+    return `${!showSidebar && "translate-y-[25px] delay-0"} ${
+      showSidebar ? `translate-y-[2px] ${delay}` : "translate-y-[-25px]"
     }  transition-all duration-500 ease `;
   };
 
@@ -23,7 +23,7 @@ const Sidebar = ({ showSidebar, setShowSidebar, activeTab }) => {
         className={`h-full md:w-[30%] sm:w-[50%] w-[80%] bg-[#ebf6f7] absolute top-0 right-0 z-[100] 
         backdrop-blur-[12px] bg-opacity-5 ${
           showSidebar ? "translate-x-0" : "translate-x-[100%] delay-700 "
-        } transition-all duration-500 ease-in-out flex justify-start items-center md:pl-[140px] pl-[80px]`}
+        } transition-all duration-500 ease-in-out flex justify-start items-center md:pl-[120px] pl-[80px]`}
       >
         <div className="flex flex-col justify-start gap-[40px] ">
           <div className="flex flex-col">
@@ -42,7 +42,7 @@ const Sidebar = ({ showSidebar, setShowSidebar, activeTab }) => {
                 <SidebarItemContainer key={index} index={index}>
                   <a
                     onClick={() => setShowSidebar(false)}
-                    href={`#${name.toLowerCase()}`}
+                    href={`#${name.toLowerCase().replace(" ", "-")}`}
                     key={index}
                     className={`flex items-center gap-[16px] group ${itemShowAndHide(
                       delay
@@ -51,7 +51,8 @@ const Sidebar = ({ showSidebar, setShowSidebar, activeTab }) => {
                     <Icon
                       size={18}
                       className={` group-hover:text-primary transition-all duration-500 ease-in-out ${
-                        activeTab.toLowerCase() == name.toLowerCase()
+                        activeTab.toLowerCase() ==
+                        name.toLowerCase().replace(" ", "-")
                           ? "text-primary"
                           : "text-secondary"
                       }`}
@@ -59,7 +60,8 @@ const Sidebar = ({ showSidebar, setShowSidebar, activeTab }) => {
                     <h3
                       className={`text-[15px] group-hover:text-primary transition-all duration-500 
                     ease-in-out ${
-                      activeTab.toLowerCase() == name.toLowerCase()
+                      activeTab.toLowerCase() ==
+                      name.toLowerCase().replace(" ", "-")
                         ? "text-primary"
                         : "text-secondary"
                     }`}

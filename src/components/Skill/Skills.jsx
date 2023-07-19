@@ -1,13 +1,12 @@
 import React from "react";
 import Skillbar from "./Skillbar";
+import { Waypoint } from "react-waypoint";
 
-
-const Skills = () => {
-
+const Skills = ({ setActiveTab }) => {
   return (
-    <>
+    <Waypoint onEnter={() => setActiveTab("skills")}>
       {/* (visible ? "animate" : "") */}
-      <div className=" py-3 sm:py-20">
+      <div id="skills" className=" py-3 sm:py-20">
         {/*  text  */}
         <div className="text py-5">
           <p className="pb-5 ">
@@ -29,7 +28,7 @@ const Skills = () => {
           <Skillbar title="php" percentage="30%" item="php" />
         </div>
       </div>
-    </>
+    </Waypoint>
   );
 };
 

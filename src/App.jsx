@@ -81,7 +81,7 @@ const App = () => {
         animate={visible5 ? "visible" : "hidden"}
         ref={ref5}
       >
-        <Education />
+        <Education setActiveTab={setActiveTab}/>
       </motion.div>
      
       {/* Portfolio */}
@@ -91,7 +91,7 @@ const App = () => {
         animate={visible2 ? "visible" : "hidden"}
         ref={ref2}
       >
-        <Portfolio />
+        <Portfolio setActiveTab={setActiveTab} />
       </motion.div>
        {/* skill  */}
        <motion.div
@@ -100,7 +100,7 @@ const App = () => {
         animate={visible4 ? "visible" : "hidden"}
         ref={ref4}
       >
-        <Skills />
+        <Skills setActiveTab={setActiveTab}/>
       </motion.div>
 {/* other OtherKnowledge  */}
       <motion.div
@@ -109,7 +109,7 @@ const App = () => {
         animate={visible1 ? "visible" : "hidden"}
         ref={ref1}
       >
-        <OtherKnowledge />
+        <OtherKnowledge setActiveTab={setActiveTab}/>
       </motion.div>
       {/* services  */}
       <motion.div
@@ -118,7 +118,7 @@ const App = () => {
         animate={visible3 ? "visible" : "hidden"}
         ref={ref3}
       >
-        <Services />
+        <Services setActiveTab={setActiveTab}/>
       </motion.div>
 
       <motion.div

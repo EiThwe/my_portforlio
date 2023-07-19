@@ -61,6 +61,28 @@ body {
   animation: widthChange 0.8s 0.2s forwards;
 }
 
+.scrollIndicator {
+  animation: scrollIndicatorAnimation 3s linear infinite;
+}
+
+@keyframes scrollIndicatorAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  70% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @keyframes widthChange {
   from {
     width: 0%;

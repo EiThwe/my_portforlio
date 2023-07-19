@@ -2,16 +2,17 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { TypeAnimation } from "react-type-animation";
 import { Waypoint } from "react-waypoint";
+import ScrollIndicator from "./ScrollIndicator";
 
 const Hero = ({ setActiveTab }) => {
   return (
     <Waypoint onEnter={() => setActiveTab("Home")}>
       <section
         id="home"
-        className="w-full md:min-h-full  flex md:py-10 py-20  items-start justify-center flex-col"
+        className="w-full md:min-h-full  flex md:py-10 py-20  items-start justify-center flex-col "
       >
         <div className="w-full  text-white ">
-          <div className="h-[280px] sm:h-[170px] lg:h-[250px] xl:h-[200px]">
+          <div className="h-[300px] sm:h-[240px] lg:h-[250px] xl:h-[200px]">
             <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
               INTRODUCTION
             </h6>
@@ -69,6 +70,8 @@ const Hero = ({ setActiveTab }) => {
             </button>
           </div>
         </div>
+
+     
       </section>
     </Waypoint>
   );

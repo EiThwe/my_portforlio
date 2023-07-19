@@ -1,11 +1,12 @@
 import React from "react";
 
 import TimelineEdu from "./TimelineEdu";
+import { Waypoint } from "react-waypoint";
 
-const Education = () => {
+const Education = ({ setActiveTab }) => {
   return (
-    <>
-      <div className=" my-20">
+    <Waypoint onEnter={() => setActiveTab("education")}>
+      <div id="education" className=" my-20">
         {/*  text  */}
         <div className="text py-5">
           <p className="pb-5">
@@ -60,7 +61,7 @@ const Education = () => {
         </div>
         </div> */}
       </div>
-    </>
+    </Waypoint>
   );
 };
 

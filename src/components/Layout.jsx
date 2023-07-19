@@ -7,6 +7,7 @@ import Sidebar from "./Sidebar";
 import Burger from "./Burger";
 
 import "./Layout.css";
+import ScrollIndicator from "./ScrollIndicator";
 
 const Layout = ({ children, activeTab }) => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -31,10 +32,12 @@ const Layout = ({ children, activeTab }) => {
               <img src={kk} className="w-full h-[80%]" alt="" />
             </div>
           </div>
-          <div className="h-full md:w-[50%] w-full flex md:justify-start justify-center overflow-y-auto">
+          <div className="h-full md:w-[50%] w-full flex md:justify-start justify-center overflow-y-auto relative">
             <div className="md:w-[80%] sm:w-[80%] w-full sm:px-0 px-3 h-full">
               {children}
             </div>
+
+            <ScrollIndicator />
           </div>
         </div>
 

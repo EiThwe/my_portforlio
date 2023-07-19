@@ -2,7 +2,7 @@ import React from "react";
 
 const SidebarItemContainer = ({ index, children }) => {
   return (
-    <div key={index ? index : 1} className="w-full h-[23px] overflow-hidden">
+    <div key={index ? index : 1} className="w-full h-[25px] overflow-hidden">
       {children}
     </div>
   );

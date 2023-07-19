@@ -6,9 +6,11 @@ import {
 } from "react-icons/tfi";
 import { MdOutlinePersonOutline } from "react-icons/md";
 import { CgMenuLeft } from "react-icons/cg";
-import { BsUiChecksGrid } from "react-icons/bs";
+import { BsUiChecksGrid, BsInfoCircle } from "react-icons/bs";
 import { BiChat } from "react-icons/bi";
 import { BrandFacebook, BrandTwitter, BrandGithub } from "tabler-icons-react";
+import { GoBook, GoStack, GoTools } from "react-icons/go";
+import { HiOutlineLightBulb } from "react-icons/hi2";
 
 export const sidebarData = [
   {
@@ -17,13 +19,33 @@ export const sidebarData = [
     delay: "delay-[500ms]",
   },
   {
-    Icon: CgMenuLeft,
-    name: "Resume",
+    Icon: BsInfoCircle,
+    name: "About",
     delay: "delay-[700ms]",
+  },
+  {
+    Icon: GoBook,
+    name: "Education",
+    delay: "delay-[800ms]",
   },
   {
     Icon: BsUiChecksGrid,
     name: "Portfolio",
+    delay: "delay-[800ms]",
+  },
+  {
+    Icon: HiOutlineLightBulb,
+    name: "Skills",
+    delay: "delay-[800ms]",
+  },
+  {
+    Icon: GoStack,
+    name: "Other Knowledges",
+    delay: "delay-[800ms]",
+  },
+  {
+    Icon: GoTools,
+    name: "Services",
     delay: "delay-[800ms]",
   },
   {

@@ -3,8 +3,11 @@ import { Waypoint } from "react-waypoint";
 
 const About = ({ setActiveTab }) => {
   return (
-    <Waypoint onEnter={() => setActiveTab("Home")}>
-      <section className="w-full md:min-h-full md:py-10 py-20 flex  items-center">
+    <Waypoint onEnter={() => setActiveTab("About")}>
+      <section
+        id="about"
+        className="w-full md:min-h-full md:py-10 py-20 flex  items-center"
+      >
         <div className="w-full  text-white ">
           <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
             About
