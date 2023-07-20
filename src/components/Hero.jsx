@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import { TypeAnimation } from "react-type-animation";
 import { Waypoint } from "react-waypoint";
 import ScrollIndicator from "./ScrollIndicator";
+import "./Hero.css";
 
 const Hero = ({ setActiveTab }) => {
   return (
@@ -11,6 +12,35 @@ const Hero = ({ setActiveTab }) => {
         id="home"
         className="w-full md:min-h-full  flex md:py-10 py-20  items-start justify-center flex-col "
       >
+        <div class="cube  absolute right-10 top-0">
+          <div class="topD"></div>
+          <div>
+            <span style={{ "--i": "0" }}></span>
+            <span style={{ "--i": "1" }}></span>
+            <span style={{ "--i": "2" }}></span>
+            <span style={{ "--i": "3" }}></span>
+          </div>
+
+          <div class="cube2">
+            <div>
+              <span style={{ "--i": "0" }}></span>
+              <span style={{ "--i": "1" }}></span>
+              <span style={{ "--i": "2" }}></span>
+              <span style={{ "--i": "3" }}></span>
+            </div>
+
+            <div class="cube3">
+              <div class="top3"></div>
+              <div>
+                <span style={{ "--i": "0" }}></span>
+                <span style={{ "--i": "1" }}></span>
+                <span style={{ "--i": "2" }}></span>
+                <span style={{ "--i": "3" }}></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="w-full  text-white ">
           <div className="h-[300px] sm:h-[240px] lg:h-[250px] xl:h-[200px]">
             <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
@@ -52,6 +82,8 @@ const Hero = ({ setActiveTab }) => {
             </h3>
           </div>
           <hr className="w-8 mb-10" />
+         
+
           <div className="flex items-center gap-3">
             <button
               className=" h-[50px] w-[200px] bg-[#2d2d2d] text-white backdrop-blur-[70px] bg-opacity-40  z-1 rounded-xl
@@ -70,8 +102,6 @@ const Hero = ({ setActiveTab }) => {
             </button>
           </div>
         </div>
-
-     
       </section>
     </Waypoint>
   );
