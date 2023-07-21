@@ -1,7 +1,13 @@
+import { Tooltip } from "@mantine/core";
 import React, { useState } from "react";
 import { HiOutlineChatBubbleOvalLeftEllipsis } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import { ArrowsMinimize, BrandMessenger, BrandTelegram, X } from "tabler-icons-react";
+import {
+  ArrowsMinimize,
+  BrandMessenger,
+  BrandTelegram,
+  X,
+} from "tabler-icons-react";
 
 const ChatShortcutButton = () => {
   const [show, setShow] = useState(false);
@@ -33,34 +39,74 @@ const ChatShortcutButton = () => {
             show ? "scale-100" : "scale-0"
           } transition-all duration-300 ease-in-out`}
         >
-          <Link
-            to={"https://t.me/eT2919"}
-            target="_blank"
-            className="chat-telegram absolute top-[115px] left-[10px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+          <Tooltip
+            withArrow
+            label="telegram"
+            arrowSize={10}
+            offset={5}
+            arrowRadius={0}
+            classNames={{
+              tooltip:
+                " bg-black backdrop-blur-[3px] bg-opacity-90 rounded-md shadow-inner shadow-[#6b6b6b] border border-gray-500 border-opacity-20 ",
+            }}
           >
-            <BrandTelegram size={25} strokeWidth={1.2} className="text-white" />
-          </Link>
-          <Link
-            to={"https://m.me/100008563840418"}
-            className="chat-messenger absolute top-[40px] left-[40px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            <Link
+              to={"https://t.me/eT2919"}
+              target="_blank"
+              className="chat-telegram absolute top-[115px] left-[10px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            >
+              <BrandTelegram
+                size={25}
+                strokeWidth={1.2}
+                className="text-white"
+              />
+            </Link>
+          </Tooltip>
+          <Tooltip
+            arrowSize={10}
+            offset={5}
+            arrowRadius={0}
+            withArrow
+            label="messenger"
+            classNames={{
+              tooltip:
+                " bg-black backdrop-blur-[3px] bg-opacity-90 rounded-md shadow-inner shadow-[#6b6b6b] border border-gray-500 border-opacity-20 ",
+            }}
           >
-            <BrandMessenger
-              size={25}
-              strokeWidth={1.2}
-              className="text-white"
-            />
-          </Link>
-          <Link
-            to={""}
-            onClick={() => setShow(!show)}
-            className="own-chat absolute top-[10px] left-[115px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            <Link
+              to={"https://m.me/100008563840418"}
+              className="chat-messenger absolute top-[40px] left-[40px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            >
+              <BrandMessenger
+                size={25}
+                strokeWidth={1.2}
+                className="text-white"
+              />
+            </Link>
+          </Tooltip>
+          <Tooltip
+            arrowSize={10}
+            offset={5}
+            arrowRadius={0}
+            withArrow
+            label="contact form"
+            classNames={{
+              tooltip:
+                " bg-black backdrop-blur-[3px] bg-opacity-90 rounded-md shadow-inner shadow-[#6b6b6b] border border-gray-500 border-opacity-20 ",
+            }}
           >
-            <HiOutlineChatBubbleOvalLeftEllipsis
-              size={25}
-              strokeWidth={1.2}
-              className="text-white"
-            />
-          </Link>
+            <Link
+              to={""}
+              onClick={() => setShow(!show)}
+              className="own-chat absolute top-[10px] left-[115px] w-11 h-11 z-10 rounded-full border-2 border-opacity-30 border-white bg-primary backdrop-blur-[20px] bg-opacity-10 flex justify-center items-center shadow-[#6b6b6b] shadow-inner"
+            >
+              <HiOutlineChatBubbleOvalLeftEllipsis
+                size={25}
+                strokeWidth={1.2}
+                className="text-white"
+              />
+            </Link>
+          </Tooltip>
         </div>
       </div>
     </div>

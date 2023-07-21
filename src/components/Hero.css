@@ -36,7 +36,7 @@
   width: calc(var(--big-cube-size) / 2);
   height: calc(var(--big-cube-size) / 2);
   transform-style: preserve-3d;
-  animation: animateD2 5s ease-out infinite alternate;
+  animation: animateD2 7s ease-out infinite alternate;
 }
 
 @keyframes animateD2 {
@@ -60,8 +60,8 @@
 
 .cube2 div span {
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 10%;
+  left: 10%;
   width: 65%;
   height: 65%;
   background: transparent;
@@ -75,7 +75,7 @@
   height: var(--big-cube-size);
   transform-style: preserve-3d;
   transform: rotateX(-30deg);
-  animation: animateD3 1s ease-in-out infinite alternate;
+  animation: animateD3 2s ease-in-out infinite alternate;
 }
 
 @keyframes animateD3 {
@@ -121,3 +121,60 @@
 
 /*  */
 
+.button-3d {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1.06em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #c90076;
+    border: none;
+    border-radius: 0.25em;
+    box-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.3);
+    transform: perspective(1em) rotateX(-1deg) rotateY(1deg);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button-3d:hover {
+    transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);
+    background-color: #c90076;
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-3d:focus,
+  .button-3d:active {
+    transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);
+    background-color: #e74c3c;
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+  /*  */
+  .button-4d {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1.06em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #1b1b1b;
+    border: none;
+    border-radius: 0.25em;
+    box-shadow: 0 0.15em 0.3em rgba(0, 0, 0, 0.3);
+    transform: perspective(1em) rotateX(-1deg) rotateY(1deg);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button-4d:hover {
+    transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);
+    background-color: #1b1b1b;
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-4d:focus,
+  .button-4d:active {
+    transform: perspective(1em) rotateX(-3deg) rotateY(3deg) translateY(-0.05em);
+    background-color: #e74c3c;
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.3);
+    outline: none;
+  }

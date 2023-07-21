@@ -12,7 +12,7 @@ const Hero = ({ setActiveTab }) => {
         id="home"
         className="w-full md:min-h-full  flex md:py-10 py-20  items-start justify-center flex-col "
       >
-        <div class="cube  absolute right-10 top-0">
+        <div class="cube hidden md:flex  absolute right-20 top-5">
           <div class="topD"></div>
           <div>
             <span style={{ "--i": "0" }}></span>
@@ -82,7 +82,7 @@ const Hero = ({ setActiveTab }) => {
             </h3>
           </div>
           <hr className="w-8 mb-10" />
-         
+         {/* <div className="flex items-center gap-3 ml-10"> <button class="button-3d">Download CV</button><button class="button-4d">Hire me</button></div> */}
 
           <div className="flex items-center gap-3">
             <button

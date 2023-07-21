@@ -40,7 +40,7 @@ const Contact = ({ setActiveTab }) => {
                 <h6 className="text-white text-base font-[400]">Send</h6>
                 <Icon icon="tabler:send" color="#f5f5f5" width={18} />
               </button>
-
+ {/* <button class="button-4d">Send </button> */}
               {/* <button className="flex items-center gap-4 flex-row-reverse">
 
                 <div className="border border-white w-[38px] h-[38px] rounded-full flex justify-center items-center">

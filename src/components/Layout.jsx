@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import kk from "../assets/img/Group 5.png";
+import React, { useState, useRef, useEffect, useCallback } from "react";
+import kk from "../assets/img/Group 6.png";
 import gifimg from "../assets/img/86896be1-5c3a-4a80-bc09-407c753496c9.gif";
 import Cursor from "./Cursor";
 import ChatShortcutButton from "./ChatShortcutButton";
@@ -11,6 +11,21 @@ import ScrollIndicator from "./ScrollIndicator";
 
 const Layout = ({ children, activeTab }) => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [showScrollBtn, setShowScrollBtn] = useState(true);
+  const scrollRef = useRef();
+
+  const onScroll = useCallback((event) => {
+    if (event.target.scrollTop > 30) {
+      setShowScrollBtn(false);
+    } else {
+      setShowScrollBtn(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    scrollRef.current.addEventListener("scroll", onScroll);
+    return () => scrollRef.current.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div>
@@ -40,8 +55,8 @@ const Layout = ({ children, activeTab }) => {
               </div>
             </div> */}
             <div class="bg z-20 absolute left-48 bottom-28">
-  <div class="loader"></div>
-</div>
+              <div class="loader"></div>
+            </div>
             <div class="code-loader z-20 absolute right-48 top-28">
               <span>{"<"}</span>
               <span>{"/>"}</span>
@@ -50,12 +65,15 @@ const Layout = ({ children, activeTab }) => {
               <img src={gifimg} alt="" />
             </div> */}
           </div>
-          <div className="h-full md:w-[50%] w-full flex md:justify-start justify-center overflow-y-auto relative">
+          <div
+            ref={scrollRef}
+            className="h-full md:w-[50%] w-full flex md:justify-start justify-center overflow-y-auto relative"
+          >
             <div className="md:w-[80%] sm:w-[80%] w-full sm:px-0 px-3 h-full">
               {children}
             </div>
 
-            <ScrollIndicator />
+            <ScrollIndicator showScrollBtn={showScrollBtn} />
           </div>
         </div>
 

@@ -4,6 +4,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ image, title, link, tools }) => {
+  
   const ref = useRef();
   const [height, setHeight] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -86,7 +87,7 @@ const ProjectCard = ({ image, title, link, tools }) => {
                 hover ? "opacity-100  " : "opacity-0"
               } transition-all  ease-in-out duration-300 text-xs flex justify-between items-center  text-white  gap-2`}
             >
-              <span className=" text-[16px] ">Demo</span>
+              <span className=" text-[16px] text-[#04d9ff] ">Demo</span>
               <BsBoxArrowUpRight className=" animate-pulse" />
             </Link>
           </div>

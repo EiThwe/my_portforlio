@@ -55,7 +55,7 @@ const App = () => {
       <div className="w-full h-screen flex justify-center items-center bg-black ">
         <div className="loading-box">
           <div className="loading-text-box">
-            <h3 className="loading-text">Raphtalia Kay</h3>
+            <h3 className="loading-text">Denny Kate</h3>
           </div>
           <span className="loading-underline"> </span>
         </div>
@@ -81,9 +81,9 @@ const App = () => {
         animate={visible5 ? "visible" : "hidden"}
         ref={ref5}
       >
-        <Education setActiveTab={setActiveTab}/>
+        <Education setActiveTab={setActiveTab} />
       </motion.div>
-     
+
       {/* Portfolio */}
       <motion.div
         variants={fadeInUp}
@@ -93,23 +93,23 @@ const App = () => {
       >
         <Portfolio setActiveTab={setActiveTab} />
       </motion.div>
-       {/* skill  */}
-       <motion.div
+      {/* skill  */}
+      <motion.div
         variants={fadeInUp}
         initial="hidden"
         animate={visible4 ? "visible" : "hidden"}
         ref={ref4}
       >
-        <Skills setActiveTab={setActiveTab}/>
+        <Skills setActiveTab={setActiveTab} />
       </motion.div>
-{/* other OtherKnowledge  */}
+      {/* other OtherKnowledge  */}
       <motion.div
         variants={fadeInUp}
         initial="hidden"
         animate={visible1 ? "visible" : "hidden"}
         ref={ref1}
       >
-        <OtherKnowledge setActiveTab={setActiveTab}/>
+        <OtherKnowledge setActiveTab={setActiveTab} />
       </motion.div>
       {/* services  */}
       <motion.div
@@ -118,7 +118,7 @@ const App = () => {
         animate={visible3 ? "visible" : "hidden"}
         ref={ref3}
       >
-        <Services setActiveTab={setActiveTab}/>
+        <Services setActiveTab={setActiveTab} />
       </motion.div>
 
       <motion.div

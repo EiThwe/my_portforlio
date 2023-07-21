@@ -13,7 +13,7 @@ const About = ({ setActiveTab }) => {
             About
           </h6>
           <h3 className="ml-2 sm:text-[37px] text-[26px] tracking-tighter mb-5 font-[400]">
-            My approach to building the tech brands of tomorrow
+            How I approach to this web field
           </h3>
           <hr className="w-8 mb-5" />
           <p className="sm:text-base text-sm text-[#7C7C7C]">
