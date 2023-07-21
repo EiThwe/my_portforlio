@@ -70,8 +70,6 @@ const Hero = ({ setActiveTab }) => {
             </button>
           </div>
         </div>
-
-     
       </section>
     </Waypoint>
   );

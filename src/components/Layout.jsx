@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import kk from "../assets/img/Young pretty young woman thinks of ideas concentrated above stands thoughtful and keeps hand on face stands in thoughtful pose wears round glasses yellow sweater.png";
 
 import Cursor from "./Cursor";
@@ -11,6 +11,21 @@ import ScrollIndicator from "./ScrollIndicator";
 
 const Layout = ({ children, activeTab }) => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [showScrollBtn, setShowScrollBtn] = useState(true);
+  const scrollRef = useRef();
+
+  const onScroll = useCallback((event) => {
+    if (event.target.scrollTop > 30) {
+      setShowScrollBtn(false);
+    } else {
+      setShowScrollBtn(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    scrollRef.current.addEventListener("scroll", onScroll);
+    return () => scrollRef.current.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div>
@@ -32,12 +47,15 @@ const Layout = ({ children, activeTab }) => {
               <img src={kk} className="w-full h-[80%]" alt="" />
             </div>
           </div>
-          <div className="h-full md:w-[50%] w-full flex md:justify-start justify-center overflow-y-auto relative">
+          <div
+            ref={scrollRef}
+            className="h-full md:w-[50%] w-full flex md:justify-start justify-center overflow-y-auto relative"
+          >
             <div className="md:w-[80%] sm:w-[80%] w-full sm:px-0 px-3 h-full">
               {children}
             </div>
 
-            <ScrollIndicator />
+            <ScrollIndicator showScrollBtn={showScrollBtn} />
           </div>
         </div>
 
