@@ -6,11 +6,11 @@ import "./Profile.css";
 const Profile = () => {
   return (
     <>
-      <div className="min-h-full">
+      <div className="min-h-full md:hidden block">
         <div className="absolute top-0 left-0 w-full h-full">
           <div
             className="md:h-full min-h-[75%]  w-full justify-center mx-auto my-auto items-center 
-           relative md:hidden flex"
+           relative  flex"
           >
             <div className=" absolute z-50  left-5 top-20 ">
               <img src={kk} className="w-full h-full" alt="" />
