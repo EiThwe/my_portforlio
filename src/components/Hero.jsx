@@ -82,13 +82,14 @@ const Hero = ({ setActiveTab }) => {
             </h3>
           </div>
           <hr className="w-8 mb-10" />
-         {/* <div className="flex items-center gap-3 ml-10"> <button class="button-3d">Download CV</button><button class="button-4d">Hire me</button></div> */}
+          {/* <div className="flex items-center gap-3 ml-10"> <button class="button-3d">Download CV</button><button class="button-4d">Hire me</button></div> */}
 
           <div className="flex items-center gap-3">
             <button
               className=" h-[50px] w-[200px] bg-[#2d2d2d] text-white backdrop-blur-[70px] bg-opacity-40  z-1 rounded-xl
         flex items-center justify-center gap-3 shadow-inner	
-        shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10"
+        shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10 hover:bg-primary transition-all 
+         duration-300 ease-in-out"
             >
               <h6>Download CV</h6>
             </button>
@@ -96,7 +97,8 @@ const Hero = ({ setActiveTab }) => {
             <button
               className=" h-[50px] w-[200px] bg-primary text-primary backdrop-blur-[50px] bg-opacity-10  z-1 rounded-xl
         flex items-center justify-center gap-3 shadow-inner	
-        shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10"
+        shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10 hover:bg-[#fff] hover:text-primary transition-all 
+        duration-300 ease-in-out"
             >
               <h6>Hire Me</h6>
             </button>
