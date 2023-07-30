@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import kk from "../assets/img/Group 6.png";
+import thwe_thwe from "../assets/img/thwe_thwe.png";
 import gifimg from "../assets/img/86896be1-5c3a-4a80-bc09-407c753496c9.gif";
 import Cursor from "./Cursor";
 import ChatShortcutButton from "./ChatShortcutButton";
@@ -43,7 +43,7 @@ const Layout = ({ children, activeTab }) => {
            relative md:flex hidden"
           >
             <div className=" absolute  w-[50%]   mx-auto ">
-              <img src={kk} className="w-full h-full" alt="" />
+              <img src={thwe_thwe} className="w-full h-full" alt="" />
             </div>
             {/* <div className="cube-loader z-20 absolute left-5 top-5">
               <div className="cube-top"></div>
@@ -54,10 +54,10 @@ const Layout = ({ children, activeTab }) => {
                 <span style={{ "--i": "3" }} className="cube-span"></span>
               </div>
             </div> */}
-            <div class="bg z-20 absolute left-48 bottom-28">
+            <div class="bg z-20 absolute left-32 bottom-16">
               <div class="loader"></div>
             </div>
-            <div class="code-loader z-20 absolute right-48 top-28">
+            <div class="code-loader z-20 absolute right-40 top-24">
               <span>{"<"}</span>
               <span>{"/>"}</span>
             </div>

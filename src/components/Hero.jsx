@@ -42,29 +42,31 @@ const Hero = ({ setActiveTab }) => {
         </div>
 
         <div className="w-full  text-white ">
-          <div className="h-[300px] sm:h-[240px] lg:h-[250px] xl:h-[200px]">
+          <div className="h-[300px] sm:h-[240px] lg:h-[250px] xl:h-[200px] w-[90%]">
             <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
               INTRODUCTION
             </h6>
-            <h3 className="ml-2 text-[30px] tracking-tighter leading-[66.7px] mb-5 font-[400]">
+            <h3 className="ml-2 text-[30px] leading-[66.7px] mb-5 font-[400] font-mono">
               I'm{" "}
               <span
                 style={{
                   fontWeight: 400,
-                  fontFamily: "VT323",
-                  letterSpacing: 1,
-                  fontSize: 55,
-                  color: "#04d9ff",
+                  fontFamily: "Anonymous Pro, monospace",
+                  letterSpacing: 3,
+                  fontSize: 60,
+                  color: "white",
                 }}
               >
-                Denny Kate
+                Thwe Thwe
               </span>
               ,{" "}
               <TypeAnimation
                 sequence={[
-                  " Jr. React Developer",
+                  " A React Developer",
                   3000,
-                  " Jr. Frontend Developer",
+                  " A  Laravel Developer",
+                  3000,
+                  "A Full Stack Developer",
                   3000,
                 ]}
                 wrapper="div"
@@ -72,11 +74,11 @@ const Hero = ({ setActiveTab }) => {
                 repeat={Infinity}
                 style={{
                   display: "block",
-                  color: "#c90076",
+                  color: "white",
                   fontWeight: 400,
-                  fontFamily: "VT323",
+                  fontFamily: "Anonymous Pro, monospace",
                   letterSpacing: 1,
-                  fontSize: 55,
+                  fontSize: 45,
                 }}
               />
             </h3>
@@ -86,16 +88,16 @@ const Hero = ({ setActiveTab }) => {
 
           <div className="flex items-center gap-3">
             <button
-              className=" h-[50px] w-[200px] bg-[#2d2d2d] text-white backdrop-blur-[70px] bg-opacity-40  z-1 rounded-xl
+              className=" h-[50px] w-[200px] bg-[#2d2d2d] text-primary backdrop-blur-[70px] bg-opacity-40  z-1 rounded-xl
         flex items-center justify-center gap-3 shadow-inner	
-        shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10 hover:bg-primary transition-all 
+        shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10 hover:bg-primary hover:text-white transition-all 
          duration-300 ease-in-out"
             >
               <h6>Download CV</h6>
             </button>
 
             <button
-              className=" h-[50px] w-[200px] bg-primary text-primary backdrop-blur-[50px] bg-opacity-10  z-1 rounded-xl
+              className=" h-[50px] w-[200px] bg-primary text-white backdrop-blur-[50px] bg-opacity-10  z-1 rounded-xl
         flex items-center justify-center gap-3 shadow-inner	
         shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10 hover:bg-[#fff] hover:text-primary transition-all 
         duration-300 ease-in-out"

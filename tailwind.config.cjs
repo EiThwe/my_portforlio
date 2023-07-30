@@ -7,6 +7,9 @@ module.exports = {
         secondary: "#7C7C7C",
         primary: "#c90076",
       },
+      fontFamily:{
+        sourcePro:"Source Code Pro, monospace"
+      }
     },
   },
   plugins: [],

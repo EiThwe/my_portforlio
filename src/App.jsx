@@ -41,7 +41,7 @@ const App = () => {
   const [ref6, visible6] = useOnScreen({ threshold: 0.01 });
 
   const [activeTab, setActiveTab] = useState("Home");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(
     () =>
       setTimeout(() => {
