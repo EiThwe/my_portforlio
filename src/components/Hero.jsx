@@ -42,7 +42,7 @@ const Hero = ({ setActiveTab }) => {
         </div>
 
         <div className="w-full  text-white ">
-          <div className="h-[300px] sm:h-[240px] lg:h-[250px] xl:h-[200px] w-[90%]">
+          <div className="sm:w-[90%] w-full">
             <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
               INTRODUCTION
             </h6>
@@ -55,6 +55,7 @@ const Hero = ({ setActiveTab }) => {
                   letterSpacing: 1,
                   fontSize: 45,
                   color: "white",
+                  whiteSpace:"nowrap"
                 }}
               >
                 Thwe Thwe

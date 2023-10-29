@@ -27,13 +27,13 @@ const Portfolio = ({ setActiveTab }) => {
             {projectCardData.map((data, i) => (
               <ProjectCard {...data} key={i} />
             ))}
-            <video
+            {/* <video
               src={mockup}
               autoPlay={true}
               loop
               controls={false}
               className="bg-transparent"
-            ></video>
+            ></video> */}
           </div>
         </div>
       </section>

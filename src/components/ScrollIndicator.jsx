@@ -3,7 +3,7 @@ import React from "react";
 const ScrollIndicator = ({ showScrollBtn }) => {
   return (
     <div
-      className={`flex items-center absolute md:bottom-[50px] bottom-[90px] sm:right-[0px] right-[5px] gap-2 rotate-90
+      className={`flex items-center absolute md:bottom-[60px] bottom-[100px] sm:right-[0px] right-[2px] gap-2 rotate-90
     ${
       showScrollBtn ? "opacity-100" : "opacity-0"
     } transition-all duration-300 ease-in-out`}

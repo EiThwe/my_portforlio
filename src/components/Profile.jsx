@@ -1,5 +1,6 @@
 import React from "react";
-import kk from "../assets/img/Group 6.png";
+import thwe_thwe from "../assets/img/thwe_thwe.png";
+
 // import gifimg from "../assets/img/4d0858f0-50c6-4102-a8ff-95ad609328fe.gif";
 import "./Profile.css";
 
@@ -12,14 +13,14 @@ const Profile = () => {
             className="md:h-full min-h-[75%]  w-full justify-center mx-auto my-auto items-center 
            relative  flex"
           >
-            <div className=" absolute z-50  left-5 top-20 ">
-              <img src={kk} className="w-full h-full" alt="" />
+            <div className=" absolute z-50  top-40 ">
+              <img src={thwe_thwe} className="w-full h-full" alt="" />
             </div>
-            <div class="code-loader z-20 absolute right-10 top-10">
+            <div class="code-loader z-20 absolute right-10 ">
               <span>{"<"}</span>
               <span>{"/>"}</span>
             </div>
-            <div class="bg z-20 absolute left-0 -bottom-10">
+            <div class="bg z-20 absolute left-0 -bottom-20">
               <div class="loader"></div>
             </div>
 

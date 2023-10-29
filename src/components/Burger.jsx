@@ -4,7 +4,7 @@ const Burger = ({ showSidebar, setShowSidebar }) => {
   return (
     <button
       onClick={() => setShowSidebar((prev) => !prev)}
-      className="fixed z-[1000] sm:top-[80px] sm:right-[80px] top-[30px] right-[30px] group flex justify-center items-center flex-col gap-[4px]
+      className="fixed z-[1000] sm:top-[80px] sm:right-[80px] top-[50px] right-[30px] group flex justify-center items-center flex-col gap-[4px]
         px-1 py-2"
     >
       <div
