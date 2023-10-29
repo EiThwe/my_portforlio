@@ -55,7 +55,7 @@ const App = () => {
       <div className="w-full h-screen flex justify-center items-center bg-black ">
         <div className="loading-box">
           <div className="loading-text-box">
-            <h3 className="loading-text">Denny Kate</h3>
+            <h3 className="loading-text">Thwe Thwe</h3>
           </div>
           <span className="loading-underline"> </span>
         </div>

@@ -46,14 +46,14 @@ const Hero = ({ setActiveTab }) => {
             <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
               INTRODUCTION
             </h6>
-            <h3 className="ml-2 text-[30px] leading-[66.7px] mb-5 font-[400] font-mono">
+            <h3 className="ml-2 text-[30px] leading-[66.7px] mb-5 font-[400]">
               I'm{" "}
               <span
                 style={{
-                  fontWeight: 400,
-                  fontFamily: "Anonymous Pro, monospace",
-                  letterSpacing: 3,
-                  fontSize: 60,
+                  fontWeight: 600,
+                  fontFamily: "Nunito, sans-serif",
+                  letterSpacing: 1,
+                  fontSize: 45,
                   color: "white",
                 }}
               >
@@ -75,8 +75,8 @@ const Hero = ({ setActiveTab }) => {
                 style={{
                   display: "block",
                   color: "white",
-                  fontWeight: 400,
-                  fontFamily: "Anonymous Pro, monospace",
+                  fontWeight: 500,
+                  fontFamily: "Nunito, sans-serif",
                   letterSpacing: 1,
                   fontSize: 45,
                 }}

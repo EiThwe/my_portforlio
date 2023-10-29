@@ -25,7 +25,8 @@ const Skills = ({ setActiveTab }) => {
           <Skillbar title="css" percentage="85%" item="css" />
           <Skillbar title="javascript" percentage="75%" item="javascript" />
           <Skillbar title="reactjs" percentage="80%" item="react" />
-          <Skillbar title="php" percentage="30%" item="php" />
+          <Skillbar title="php" percentage="60%" item="php" />
+          <Skillbar title="laravel" percentage="80%" item="laravel" />
         </div>
       </div>
     </Waypoint>

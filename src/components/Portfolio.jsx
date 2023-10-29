@@ -2,6 +2,7 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { projectCardData } from "../utils/projectCardData";
 import { Waypoint } from "react-waypoint";
+import mockup from "../assets/mockrocket-export.mp4";
 
 const Portfolio = ({ setActiveTab }) => {
   return (
@@ -26,6 +27,13 @@ const Portfolio = ({ setActiveTab }) => {
             {projectCardData.map((data, i) => (
               <ProjectCard {...data} key={i} />
             ))}
+            <video
+              src={mockup}
+              autoPlay={true}
+              loop
+              controls={false}
+              className="bg-transparent"
+            ></video>
           </div>
         </div>
       </section>

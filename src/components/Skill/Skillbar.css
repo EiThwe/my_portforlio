@@ -34,7 +34,11 @@
   animation-delay: 0.1s;
 }
 .skill-bar .php {
-  width: 30%;
+  width: 60%;
+  animation-delay: 0.1s;
+}
+.skill-bar .laravel {
+  width: 80%;
   animation-delay: 0.1s;
 }
 .skill-bar .react {
