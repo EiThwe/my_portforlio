@@ -17,11 +17,16 @@ const About = ({ setActiveTab }) => {
           </h3>
           <hr className="w-8 mb-5" />
           <p className="sm:text-base text-sm text-[#7C7C7C]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting.
+            I'm constantly immersed in learning about web design, development,
+            and digital marketing, keeping pace with the ever-changing online
+            landscape. My dedication lies in crafting websites that are both
+            user-friendly and visually engaging. By combining my technical
+            skills with artistic ingenuity, I strive to enhance the digital
+            world gradually. Staying updated with the latest trends and
+            innovative approaches, I work diligently to ensure that websites are
+            not only functional but also aesthetically pleasing. My goal is to
+            contribute positively to the online experience, one step at a time,
+            making the digital world more accessible and attractive for users.
           </p>
         </div>
       </section>

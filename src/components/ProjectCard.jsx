@@ -4,7 +4,6 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ image, title, link, tools }) => {
-  
   const ref = useRef();
   const [height, setHeight] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -18,7 +17,7 @@ const ProjectCard = ({ image, title, link, tools }) => {
       <div
         onMouseOver={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        className=" project-card w-full sm:h-[285px] h-[220px] bg-black backdrop-blur-[3px] bg-opacity-5 rounded-xl shadow-inner	
+        className=" project-card w-full sm:h-[285px] h-[220px] bg-black backdrop-blur-[3px] bg-opacity-5  shadow-inner	
         shadow-[#6b6b6b] border border-gray-500 border-opacity-20 flex justify-center items-center overflow-hidden z-[100]"
       >
         {/* loading section */}
@@ -33,7 +32,7 @@ const ProjectCard = ({ image, title, link, tools }) => {
             onLoad={() => setLoading(false)}
             src={image}
             alt="project"
-            className="project-img w-full h-full rounded-xl "
+            className="project-img w-full h-full  "
           />
         </div>
 
