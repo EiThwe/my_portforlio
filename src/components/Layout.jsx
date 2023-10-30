@@ -39,10 +39,10 @@ const Layout = ({ children, activeTab }) => {
             py-[10px] sm:pt-0 pt-[40px]  relative"
         >
           <div
-            className="md:h-full min-h-[500px] md:w-[50%] w-full  justify-center mx-auto items-center 
+            className="md:h-full min-h-[500px] md:w-[50%] w-full justify-center mx-auto items-center 
            relative md:flex hidden"
           >
-            <div className=" absolute  w-[50%]   mx-auto ">
+            <div className=" absolute w-[50%] mx-auto">
               <img src={thwe_thwe} className="w-full h-full" alt="" />
             </div>
             {/* <div className="cube-loader z-20 absolute left-5 top-5">

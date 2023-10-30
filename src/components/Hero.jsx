@@ -46,17 +46,18 @@ const Hero = ({ setActiveTab }) => {
             <h6 className="uppercase text-[9px] font-bold tracking-[1.4px] mb-5">
               INTRODUCTION
             </h6>
-            <h3 className="ml-2 text-[30px] leading-[66.7px] mb-5 font-[400]">
+            <h3 className="ml-2 text-[30px] xs:leading-[66.7px] leading-[60px] mb-5 font-[400]">
               I'm{" "}
               <span
                 style={{
                   fontWeight: 600,
                   fontFamily: "Nunito, sans-serif",
                   letterSpacing: 1,
-                  fontSize: 45,
+                  // fontSize: 45,
                   color: "white",
-                  whiteSpace:"nowrap"
+                  whiteSpace: "nowrap",
                 }}
+                className="xs:text-[45px] text-[36px]"
               >
                 Thwe Thwe
               </span>
@@ -79,17 +80,18 @@ const Hero = ({ setActiveTab }) => {
                   fontWeight: 500,
                   fontFamily: "Nunito, sans-serif",
                   letterSpacing: 1,
-                  fontSize: 45,
+                  // fontSize: 45,
                 }}
+                className="xs:text-[45px] text-[36px]"
               />
             </h3>
           </div>
           <hr className="w-8 mb-10" />
           {/* <div className="flex items-center gap-3 ml-10"> <button class="button-3d">Download CV</button><button class="button-4d">Hire me</button></div> */}
 
-          <div className="flex items-center gap-3">
+          <div className="flex xs:flex-row flex-col items-center gap-3">
             <button
-              className=" h-[50px] w-[200px] bg-[#2d2d2d] text-primary backdrop-blur-[70px] bg-opacity-40  z-1 rounded-xl
+              className=" h-[50px] xs:w-[200px] w-full bg-[#2d2d2d] text-primary backdrop-blur-[70px] bg-opacity-40  z-1 rounded-xl
         flex items-center justify-center gap-3 shadow-inner	
         shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10 hover:bg-primary hover:text-white transition-all 
          duration-300 ease-in-out"
@@ -98,7 +100,7 @@ const Hero = ({ setActiveTab }) => {
             </button>
 
             <button
-              className=" h-[50px] w-[200px] bg-primary text-white backdrop-blur-[50px] bg-opacity-10  z-1 rounded-xl
+              className=" h-[50px] xs:w-[200px] w-full bg-primary text-white backdrop-blur-[50px] bg-opacity-10  z-1 rounded-xl
         flex items-center justify-center gap-3 shadow-inner	
         shadow-[#6b6b6b] border border-gray-500 border-opacity-20 z-10 hover:bg-[#fff] hover:text-primary transition-all 
         duration-300 ease-in-out"

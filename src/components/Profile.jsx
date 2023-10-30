@@ -13,10 +13,10 @@ const Profile = () => {
             className="md:h-full min-h-[75%]  w-full justify-center mx-auto my-auto items-center 
            relative  flex"
           >
-            <div className=" absolute z-50  top-40 ">
+            <div className=" absolute z-50 xs:top-40 top-36">
               <img src={thwe_thwe} className="w-full h-full" alt="" />
             </div>
-            <div class="code-loader z-20 absolute right-10 ">
+            <div class="code-loader z-20 absolute top-14 right-10 ">
               <span>{"<"}</span>
               <span>{"/>"}</span>
             </div>
